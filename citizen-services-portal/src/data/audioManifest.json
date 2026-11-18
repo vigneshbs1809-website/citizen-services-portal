@@ -1,0 +1,533 @@
+{
+  "welcome-sample-kn": {
+    "kn": "/audio/welcome-sample-kn_kn.mp3"
+  },
+  "welcome-sample-en": {
+    "en": "/audio/welcome-sample-en_en.mp3"
+  },
+  "welcome-sample-te": {
+    "te": "/audio/welcome-sample-te_te.mp3"
+  },
+  "welcome-sample-ta": {
+    "ta": "/audio/welcome-sample-ta_ta.mp3"
+  },
+  "welcome-sample-hi": {
+    "hi": "/audio/welcome-sample-hi_hi.mp3"
+  },
+  "welcome-sample-ml": {
+    "ml": "/audio/welcome-sample-ml_ml.mp3"
+  },
+  "home-sample-guidance": {
+    "en": "/audio/home-sample-guidance_en.mp3",
+    "hi": "/audio/home-sample-guidance_hi.mp3",
+    "kn": "/audio/home-sample-guidance_kn.mp3",
+    "te": "/audio/home-sample-guidance_te.mp3",
+    "ml": "/audio/home-sample-guidance_ml.mp3",
+    "ta": "/audio/home-sample-guidance_ta.mp3"
+  },
+  "glossary-overview-audio": {
+    "hi": "/audio/glossary-overview-audio_hi.mp3",
+    "en": "/audio/glossary-overview-audio_en.mp3",
+    "kn": "/audio/glossary-overview-audio_kn.mp3",
+    "te": "/audio/glossary-overview-audio_te.mp3",
+    "ta": "/audio/glossary-overview-audio_ta.mp3",
+    "ml": "/audio/glossary-overview-audio_ml.mp3"
+  },
+  "assistant-step-1": {
+    "en": "/audio/assistant-step-1_en.mp3",
+    "kn": "/audio/assistant-step-1_kn.mp3",
+    "te": "/audio/assistant-step-1_te.mp3",
+    "hi": "/audio/assistant-step-1_hi.mp3",
+    "ta": "/audio/assistant-step-1_ta.mp3",
+    "ml": "/audio/assistant-step-1_ml.mp3"
+  },
+  "assistant-step-2": {
+    "en": "/audio/assistant-step-2_en.mp3",
+    "kn": "/audio/assistant-step-2_kn.mp3",
+    "hi": "/audio/assistant-step-2_hi.mp3",
+    "te": "/audio/assistant-step-2_te.mp3",
+    "ml": "/audio/assistant-step-2_ml.mp3",
+    "ta": "/audio/assistant-step-2_ta.mp3"
+  },
+  "assistant-step-3": {
+    "en": "/audio/assistant-step-3_en.mp3",
+    "te": "/audio/assistant-step-3_te.mp3",
+    "hi": "/audio/assistant-step-3_hi.mp3",
+    "kn": "/audio/assistant-step-3_kn.mp3",
+    "ta": "/audio/assistant-step-3_ta.mp3",
+    "ml": "/audio/assistant-step-3_ml.mp3"
+  },
+  "assistant-step-4": {
+    "en": "/audio/assistant-step-4_en.mp3",
+    "hi": "/audio/assistant-step-4_hi.mp3",
+    "kn": "/audio/assistant-step-4_kn.mp3",
+    "te": "/audio/assistant-step-4_te.mp3",
+    "ta": "/audio/assistant-step-4_ta.mp3",
+    "ml": "/audio/assistant-step-4_ml.mp3"
+  },
+  "assistant-step-5": {
+    "en": "/audio/assistant-step-5_en.mp3",
+    "hi": "/audio/assistant-step-5_hi.mp3",
+    "te": "/audio/assistant-step-5_te.mp3",
+    "kn": "/audio/assistant-step-5_kn.mp3",
+    "ml": "/audio/assistant-step-5_ml.mp3",
+    "ta": "/audio/assistant-step-5_ta.mp3"
+  },
+  "assistant-step-6": {
+    "en": "/audio/assistant-step-6_en.mp3",
+    "hi": "/audio/assistant-step-6_hi.mp3",
+    "kn": "/audio/assistant-step-6_kn.mp3",
+    "ta": "/audio/assistant-step-6_ta.mp3",
+    "te": "/audio/assistant-step-6_te.mp3",
+    "ml": "/audio/assistant-step-6_ml.mp3"
+  },
+  "service-card-income-certificate": {
+    "en": "/audio/service-card-income-certificate_en.mp3",
+    "kn": "/audio/service-card-income-certificate_kn.mp3",
+    "hi": "/audio/service-card-income-certificate_hi.mp3",
+    "te": "/audio/service-card-income-certificate_te.mp3",
+    "ta": "/audio/service-card-income-certificate_ta.mp3",
+    "ml": "/audio/service-card-income-certificate_ml.mp3"
+  },
+  "service-summary-income-certificate": {
+    "en": "/audio/service-summary-income-certificate_en.mp3",
+    "kn": "/audio/service-summary-income-certificate_kn.mp3",
+    "hi": "/audio/service-summary-income-certificate_hi.mp3",
+    "te": "/audio/service-summary-income-certificate_te.mp3",
+    "ta": "/audio/service-summary-income-certificate_ta.mp3",
+    "ml": "/audio/service-summary-income-certificate_ml.mp3"
+  },
+  "service-desc-income-certificate": {
+    "en": "/audio/service-desc-income-certificate_en.mp3",
+    "kn": "/audio/service-desc-income-certificate_kn.mp3",
+    "hi": "/audio/service-desc-income-certificate_hi.mp3",
+    "te": "/audio/service-desc-income-certificate_te.mp3",
+    "ta": "/audio/service-desc-income-certificate_ta.mp3",
+    "ml": "/audio/service-desc-income-certificate_ml.mp3"
+  },
+  "service-summary-caste-certificate": {
+    "en": "/audio/service-summary-caste-certificate_en.mp3",
+    "kn": "/audio/service-summary-caste-certificate_kn.mp3",
+    "hi": "/audio/service-summary-caste-certificate_hi.mp3",
+    "te": "/audio/service-summary-caste-certificate_te.mp3",
+    "ta": "/audio/service-summary-caste-certificate_ta.mp3",
+    "ml": "/audio/service-summary-caste-certificate_ml.mp3"
+  },
+  "service-card-caste-certificate": {
+    "kn": "/audio/service-card-caste-certificate_kn.mp3",
+    "hi": "/audio/service-card-caste-certificate_hi.mp3",
+    "en": "/audio/service-card-caste-certificate_en.mp3",
+    "te": "/audio/service-card-caste-certificate_te.mp3",
+    "ta": "/audio/service-card-caste-certificate_ta.mp3",
+    "ml": "/audio/service-card-caste-certificate_ml.mp3"
+  },
+  "service-desc-caste-certificate": {
+    "kn": "/audio/service-desc-caste-certificate_kn.mp3",
+    "en": "/audio/service-desc-caste-certificate_en.mp3",
+    "hi": "/audio/service-desc-caste-certificate_hi.mp3",
+    "te": "/audio/service-desc-caste-certificate_te.mp3",
+    "ta": "/audio/service-desc-caste-certificate_ta.mp3",
+    "ml": "/audio/service-desc-caste-certificate_ml.mp3"
+  },
+  "service-summary-residence-certificate": {
+    "en": "/audio/service-summary-residence-certificate_en.mp3",
+    "kn": "/audio/service-summary-residence-certificate_kn.mp3",
+    "hi": "/audio/service-summary-residence-certificate_hi.mp3",
+    "te": "/audio/service-summary-residence-certificate_te.mp3",
+    "ta": "/audio/service-summary-residence-certificate_ta.mp3",
+    "ml": "/audio/service-summary-residence-certificate_ml.mp3"
+  },
+  "service-card-residence-certificate": {
+    "en": "/audio/service-card-residence-certificate_en.mp3",
+    "kn": "/audio/service-card-residence-certificate_kn.mp3",
+    "hi": "/audio/service-card-residence-certificate_hi.mp3",
+    "te": "/audio/service-card-residence-certificate_te.mp3",
+    "ta": "/audio/service-card-residence-certificate_ta.mp3",
+    "ml": "/audio/service-card-residence-certificate_ml.mp3"
+  },
+  "service-desc-residence-certificate": {
+    "en": "/audio/service-desc-residence-certificate_en.mp3",
+    "kn": "/audio/service-desc-residence-certificate_kn.mp3",
+    "hi": "/audio/service-desc-residence-certificate_hi.mp3",
+    "te": "/audio/service-desc-residence-certificate_te.mp3",
+    "ta": "/audio/service-desc-residence-certificate_ta.mp3",
+    "ml": "/audio/service-desc-residence-certificate_ml.mp3"
+  },
+  "service-summary-scholarship-guidance": {
+    "en": "/audio/service-summary-scholarship-guidance_en.mp3",
+    "kn": "/audio/service-summary-scholarship-guidance_kn.mp3",
+    "hi": "/audio/service-summary-scholarship-guidance_hi.mp3",
+    "te": "/audio/service-summary-scholarship-guidance_te.mp3",
+    "ta": "/audio/service-summary-scholarship-guidance_ta.mp3",
+    "ml": "/audio/service-summary-scholarship-guidance_ml.mp3"
+  },
+  "service-desc-scholarship-guidance": {
+    "en": "/audio/service-desc-scholarship-guidance_en.mp3",
+    "kn": "/audio/service-desc-scholarship-guidance_kn.mp3",
+    "hi": "/audio/service-desc-scholarship-guidance_hi.mp3",
+    "te": "/audio/service-desc-scholarship-guidance_te.mp3",
+    "ta": "/audio/service-desc-scholarship-guidance_ta.mp3",
+    "ml": "/audio/service-desc-scholarship-guidance_ml.mp3"
+  },
+  "service-card-scholarship-guidance": {
+    "en": "/audio/service-card-scholarship-guidance_en.mp3",
+    "kn": "/audio/service-card-scholarship-guidance_kn.mp3",
+    "hi": "/audio/service-card-scholarship-guidance_hi.mp3",
+    "te": "/audio/service-card-scholarship-guidance_te.mp3",
+    "ta": "/audio/service-card-scholarship-guidance_ta.mp3",
+    "ml": "/audio/service-card-scholarship-guidance_ml.mp3"
+  },
+  "service-card-pension-guidance": {
+    "en": "/audio/service-card-pension-guidance_en.mp3",
+    "kn": "/audio/service-card-pension-guidance_kn.mp3",
+    "hi": "/audio/service-card-pension-guidance_hi.mp3",
+    "te": "/audio/service-card-pension-guidance_te.mp3",
+    "ta": "/audio/service-card-pension-guidance_ta.mp3",
+    "ml": "/audio/service-card-pension-guidance_ml.mp3"
+  },
+  "service-summary-pension-guidance": {
+    "en": "/audio/service-summary-pension-guidance_en.mp3",
+    "kn": "/audio/service-summary-pension-guidance_kn.mp3",
+    "hi": "/audio/service-summary-pension-guidance_hi.mp3",
+    "te": "/audio/service-summary-pension-guidance_te.mp3",
+    "ta": "/audio/service-summary-pension-guidance_ta.mp3",
+    "ml": "/audio/service-summary-pension-guidance_ml.mp3"
+  },
+  "service-desc-pension-guidance": {
+    "en": "/audio/service-desc-pension-guidance_en.mp3",
+    "kn": "/audio/service-desc-pension-guidance_kn.mp3",
+    "hi": "/audio/service-desc-pension-guidance_hi.mp3",
+    "te": "/audio/service-desc-pension-guidance_te.mp3",
+    "ta": "/audio/service-desc-pension-guidance_ta.mp3",
+    "ml": "/audio/service-desc-pension-guidance_ml.mp3"
+  },
+  "service-card-ration-card": {
+    "en": "/audio/service-card-ration-card_en.mp3",
+    "kn": "/audio/service-card-ration-card_kn.mp3",
+    "hi": "/audio/service-card-ration-card_hi.mp3",
+    "te": "/audio/service-card-ration-card_te.mp3",
+    "ta": "/audio/service-card-ration-card_ta.mp3",
+    "ml": "/audio/service-card-ration-card_ml.mp3"
+  },
+  "service-summary-ration-card": {
+    "en": "/audio/service-summary-ration-card_en.mp3",
+    "kn": "/audio/service-summary-ration-card_kn.mp3",
+    "hi": "/audio/service-summary-ration-card_hi.mp3",
+    "te": "/audio/service-summary-ration-card_te.mp3",
+    "ta": "/audio/service-summary-ration-card_ta.mp3",
+    "ml": "/audio/service-summary-ration-card_ml.mp3"
+  },
+  "service-desc-ration-card": {
+    "en": "/audio/service-desc-ration-card_en.mp3",
+    "hi": "/audio/service-desc-ration-card_hi.mp3",
+    "kn": "/audio/service-desc-ration-card_kn.mp3",
+    "te": "/audio/service-desc-ration-card_te.mp3",
+    "ta": "/audio/service-desc-ration-card_ta.mp3",
+    "ml": "/audio/service-desc-ration-card_ml.mp3"
+  },
+  "service-card-ayushman-card": {
+    "en": "/audio/service-card-ayushman-card_en.mp3",
+    "kn": "/audio/service-card-ayushman-card_kn.mp3",
+    "hi": "/audio/service-card-ayushman-card_hi.mp3",
+    "te": "/audio/service-card-ayushman-card_te.mp3",
+    "ta": "/audio/service-card-ayushman-card_ta.mp3",
+    "ml": "/audio/service-card-ayushman-card_ml.mp3"
+  },
+  "service-summary-ayushman-card": {
+    "en": "/audio/service-summary-ayushman-card_en.mp3",
+    "kn": "/audio/service-summary-ayushman-card_kn.mp3",
+    "hi": "/audio/service-summary-ayushman-card_hi.mp3",
+    "te": "/audio/service-summary-ayushman-card_te.mp3",
+    "ta": "/audio/service-summary-ayushman-card_ta.mp3",
+    "ml": "/audio/service-summary-ayushman-card_ml.mp3"
+  },
+  "service-desc-ayushman-card": {
+    "en": "/audio/service-desc-ayushman-card_en.mp3",
+    "kn": "/audio/service-desc-ayushman-card_kn.mp3",
+    "hi": "/audio/service-desc-ayushman-card_hi.mp3",
+    "te": "/audio/service-desc-ayushman-card_te.mp3",
+    "ta": "/audio/service-desc-ayushman-card_ta.mp3",
+    "ml": "/audio/service-desc-ayushman-card_ml.mp3"
+  },
+  "service-card-pm-kisan": {
+    "en": "/audio/service-card-pm-kisan_en.mp3",
+    "kn": "/audio/service-card-pm-kisan_kn.mp3",
+    "hi": "/audio/service-card-pm-kisan_hi.mp3",
+    "te": "/audio/service-card-pm-kisan_te.mp3",
+    "ta": "/audio/service-card-pm-kisan_ta.mp3",
+    "ml": "/audio/service-card-pm-kisan_ml.mp3"
+  },
+  "service-summary-pm-kisan": {
+    "en": "/audio/service-summary-pm-kisan_en.mp3",
+    "kn": "/audio/service-summary-pm-kisan_kn.mp3",
+    "hi": "/audio/service-summary-pm-kisan_hi.mp3",
+    "te": "/audio/service-summary-pm-kisan_te.mp3",
+    "ta": "/audio/service-summary-pm-kisan_ta.mp3",
+    "ml": "/audio/service-summary-pm-kisan_ml.mp3"
+  },
+  "service-desc-pm-kisan": {
+    "en": "/audio/service-desc-pm-kisan_en.mp3",
+    "kn": "/audio/service-desc-pm-kisan_kn.mp3",
+    "hi": "/audio/service-desc-pm-kisan_hi.mp3",
+    "te": "/audio/service-desc-pm-kisan_te.mp3",
+    "ta": "/audio/service-desc-pm-kisan_ta.mp3",
+    "ml": "/audio/service-desc-pm-kisan_ml.mp3"
+  },
+  "service-card-sample-solar-subsidy": {
+    "en": "/audio/service-card-sample-solar-subsidy_en.mp3",
+    "kn": "/audio/service-card-sample-solar-subsidy_kn.mp3",
+    "hi": "/audio/service-card-sample-solar-subsidy_hi.mp3",
+    "te": "/audio/service-card-sample-solar-subsidy_te.mp3",
+    "ta": "/audio/service-card-sample-solar-subsidy_ta.mp3",
+    "ml": "/audio/service-card-sample-solar-subsidy_ml.mp3"
+  },
+  "service-summary-sample-solar-subsidy": {
+    "en": "/audio/service-summary-sample-solar-subsidy_en.mp3",
+    "kn": "/audio/service-summary-sample-solar-subsidy_kn.mp3",
+    "hi": "/audio/service-summary-sample-solar-subsidy_hi.mp3",
+    "te": "/audio/service-summary-sample-solar-subsidy_te.mp3",
+    "ta": "/audio/service-summary-sample-solar-subsidy_ta.mp3",
+    "ml": "/audio/service-summary-sample-solar-subsidy_ml.mp3"
+  },
+  "service-desc-sample-solar-subsidy": {
+    "en": "/audio/service-desc-sample-solar-subsidy_en.mp3",
+    "kn": "/audio/service-desc-sample-solar-subsidy_kn.mp3",
+    "hi": "/audio/service-desc-sample-solar-subsidy_hi.mp3",
+    "te": "/audio/service-desc-sample-solar-subsidy_te.mp3",
+    "ta": "/audio/service-desc-sample-solar-subsidy_ta.mp3",
+    "ml": "/audio/service-desc-sample-solar-subsidy_ml.mp3"
+  },
+  "docs-all-income-certificate": {
+    "en": "/audio/docs-all-income-certificate_en.mp3",
+    "hi": "/audio/docs-all-income-certificate_hi.mp3",
+    "kn": "/audio/docs-all-income-certificate_kn.mp3",
+    "te": "/audio/docs-all-income-certificate_te.mp3",
+    "ta": "/audio/docs-all-income-certificate_ta.mp3",
+    "ml": "/audio/docs-all-income-certificate_ml.mp3"
+  },
+  "docs-all-caste-certificate": {
+    "en": "/audio/docs-all-caste-certificate_en.mp3",
+    "hi": "/audio/docs-all-caste-certificate_hi.mp3",
+    "kn": "/audio/docs-all-caste-certificate_kn.mp3",
+    "te": "/audio/docs-all-caste-certificate_te.mp3",
+    "ta": "/audio/docs-all-caste-certificate_ta.mp3",
+    "ml": "/audio/docs-all-caste-certificate_ml.mp3"
+  },
+  "docs-all-residence-certificate": {
+    "en": "/audio/docs-all-residence-certificate_en.mp3",
+    "kn": "/audio/docs-all-residence-certificate_kn.mp3",
+    "hi": "/audio/docs-all-residence-certificate_hi.mp3",
+    "ta": "/audio/docs-all-residence-certificate_ta.mp3",
+    "te": "/audio/docs-all-residence-certificate_te.mp3",
+    "ml": "/audio/docs-all-residence-certificate_ml.mp3"
+  },
+  "docs-all-scholarship-guidance": {
+    "en": "/audio/docs-all-scholarship-guidance_en.mp3",
+    "kn": "/audio/docs-all-scholarship-guidance_kn.mp3",
+    "ml": "/audio/docs-all-scholarship-guidance_ml.mp3",
+    "hi": "/audio/docs-all-scholarship-guidance_hi.mp3",
+    "te": "/audio/docs-all-scholarship-guidance_te.mp3",
+    "ta": "/audio/docs-all-scholarship-guidance_ta.mp3"
+  },
+  "docs-all-pension-guidance": {
+    "en": "/audio/docs-all-pension-guidance_en.mp3",
+    "kn": "/audio/docs-all-pension-guidance_kn.mp3",
+    "te": "/audio/docs-all-pension-guidance_te.mp3",
+    "hi": "/audio/docs-all-pension-guidance_hi.mp3",
+    "ml": "/audio/docs-all-pension-guidance_ml.mp3",
+    "ta": "/audio/docs-all-pension-guidance_ta.mp3"
+  },
+  "docs-all-ration-card": {
+    "en": "/audio/docs-all-ration-card_en.mp3",
+    "kn": "/audio/docs-all-ration-card_kn.mp3",
+    "hi": "/audio/docs-all-ration-card_hi.mp3",
+    "ta": "/audio/docs-all-ration-card_ta.mp3",
+    "te": "/audio/docs-all-ration-card_te.mp3",
+    "ml": "/audio/docs-all-ration-card_ml.mp3"
+  },
+  "docs-all-ayushman-card": {
+    "en": "/audio/docs-all-ayushman-card_en.mp3",
+    "kn": "/audio/docs-all-ayushman-card_kn.mp3",
+    "hi": "/audio/docs-all-ayushman-card_hi.mp3",
+    "ml": "/audio/docs-all-ayushman-card_ml.mp3",
+    "te": "/audio/docs-all-ayushman-card_te.mp3",
+    "ta": "/audio/docs-all-ayushman-card_ta.mp3"
+  },
+  "docs-all-pm-kisan": {
+    "en": "/audio/docs-all-pm-kisan_en.mp3",
+    "te": "/audio/docs-all-pm-kisan_te.mp3",
+    "kn": "/audio/docs-all-pm-kisan_kn.mp3",
+    "ta": "/audio/docs-all-pm-kisan_ta.mp3",
+    "hi": "/audio/docs-all-pm-kisan_hi.mp3",
+    "ml": "/audio/docs-all-pm-kisan_ml.mp3"
+  },
+  "eligibility-all-income-certificate": {
+    "en": "/audio/eligibility-all-income-certificate_en.mp3",
+    "kn": "/audio/eligibility-all-income-certificate_kn.mp3",
+    "hi": "/audio/eligibility-all-income-certificate_hi.mp3",
+    "te": "/audio/eligibility-all-income-certificate_te.mp3",
+    "ta": "/audio/eligibility-all-income-certificate_ta.mp3",
+    "ml": "/audio/eligibility-all-income-certificate_ml.mp3"
+  },
+  "eligibility-all-caste-certificate": {
+    "en": "/audio/eligibility-all-caste-certificate_en.mp3",
+    "kn": "/audio/eligibility-all-caste-certificate_kn.mp3",
+    "te": "/audio/eligibility-all-caste-certificate_te.mp3",
+    "hi": "/audio/eligibility-all-caste-certificate_hi.mp3",
+    "ta": "/audio/eligibility-all-caste-certificate_ta.mp3",
+    "ml": "/audio/eligibility-all-caste-certificate_ml.mp3"
+  },
+  "eligibility-all-residence-certificate": {
+    "en": "/audio/eligibility-all-residence-certificate_en.mp3",
+    "kn": "/audio/eligibility-all-residence-certificate_kn.mp3",
+    "hi": "/audio/eligibility-all-residence-certificate_hi.mp3",
+    "te": "/audio/eligibility-all-residence-certificate_te.mp3",
+    "ml": "/audio/eligibility-all-residence-certificate_ml.mp3",
+    "ta": "/audio/eligibility-all-residence-certificate_ta.mp3"
+  },
+  "eligibility-all-scholarship-guidance": {
+    "en": "/audio/eligibility-all-scholarship-guidance_en.mp3",
+    "kn": "/audio/eligibility-all-scholarship-guidance_kn.mp3",
+    "hi": "/audio/eligibility-all-scholarship-guidance_hi.mp3",
+    "te": "/audio/eligibility-all-scholarship-guidance_te.mp3",
+    "ta": "/audio/eligibility-all-scholarship-guidance_ta.mp3",
+    "ml": "/audio/eligibility-all-scholarship-guidance_ml.mp3"
+  },
+  "eligibility-all-pension-guidance": {
+    "en": "/audio/eligibility-all-pension-guidance_en.mp3",
+    "hi": "/audio/eligibility-all-pension-guidance_hi.mp3",
+    "kn": "/audio/eligibility-all-pension-guidance_kn.mp3",
+    "te": "/audio/eligibility-all-pension-guidance_te.mp3",
+    "ta": "/audio/eligibility-all-pension-guidance_ta.mp3",
+    "ml": "/audio/eligibility-all-pension-guidance_ml.mp3"
+  },
+  "eligibility-all-ration-card": {
+    "en": "/audio/eligibility-all-ration-card_en.mp3",
+    "kn": "/audio/eligibility-all-ration-card_kn.mp3",
+    "hi": "/audio/eligibility-all-ration-card_hi.mp3",
+    "te": "/audio/eligibility-all-ration-card_te.mp3",
+    "ml": "/audio/eligibility-all-ration-card_ml.mp3",
+    "ta": "/audio/eligibility-all-ration-card_ta.mp3"
+  },
+  "eligibility-all-ayushman-card": {
+    "hi": "/audio/eligibility-all-ayushman-card_hi.mp3",
+    "kn": "/audio/eligibility-all-ayushman-card_kn.mp3",
+    "en": "/audio/eligibility-all-ayushman-card_en.mp3",
+    "te": "/audio/eligibility-all-ayushman-card_te.mp3",
+    "ta": "/audio/eligibility-all-ayushman-card_ta.mp3",
+    "ml": "/audio/eligibility-all-ayushman-card_ml.mp3"
+  },
+  "eligibility-all-pm-kisan": {
+    "en": "/audio/eligibility-all-pm-kisan_en.mp3",
+    "te": "/audio/eligibility-all-pm-kisan_te.mp3",
+    "kn": "/audio/eligibility-all-pm-kisan_kn.mp3",
+    "hi": "/audio/eligibility-all-pm-kisan_hi.mp3",
+    "ta": "/audio/eligibility-all-pm-kisan_ta.mp3",
+    "ml": "/audio/eligibility-all-pm-kisan_ml.mp3"
+  },
+  "guidance-all-income-certificate": {
+    "en": "/audio/guidance-all-income-certificate_en.mp3",
+    "kn": "/audio/guidance-all-income-certificate_kn.mp3",
+    "te": "/audio/guidance-all-income-certificate_te.mp3",
+    "ml": "/audio/guidance-all-income-certificate_ml.mp3",
+    "hi": "/audio/guidance-all-income-certificate_hi.mp3",
+    "ta": "/audio/guidance-all-income-certificate_ta.mp3"
+  },
+  "guidance-all-caste-certificate": {
+    "en": "/audio/guidance-all-caste-certificate_en.mp3",
+    "kn": "/audio/guidance-all-caste-certificate_kn.mp3",
+    "hi": "/audio/guidance-all-caste-certificate_hi.mp3",
+    "ta": "/audio/guidance-all-caste-certificate_ta.mp3",
+    "te": "/audio/guidance-all-caste-certificate_te.mp3",
+    "ml": "/audio/guidance-all-caste-certificate_ml.mp3"
+  },
+  "guidance-all-residence-certificate": {
+    "en": "/audio/guidance-all-residence-certificate_en.mp3",
+    "kn": "/audio/guidance-all-residence-certificate_kn.mp3",
+    "te": "/audio/guidance-all-residence-certificate_te.mp3",
+    "ta": "/audio/guidance-all-residence-certificate_ta.mp3",
+    "hi": "/audio/guidance-all-residence-certificate_hi.mp3",
+    "ml": "/audio/guidance-all-residence-certificate_ml.mp3"
+  },
+  "guidance-all-scholarship-guidance": {
+    "en": "/audio/guidance-all-scholarship-guidance_en.mp3",
+    "kn": "/audio/guidance-all-scholarship-guidance_kn.mp3",
+    "hi": "/audio/guidance-all-scholarship-guidance_hi.mp3",
+    "ta": "/audio/guidance-all-scholarship-guidance_ta.mp3",
+    "te": "/audio/guidance-all-scholarship-guidance_te.mp3",
+    "ml": "/audio/guidance-all-scholarship-guidance_ml.mp3"
+  },
+  "guidance-all-pension-guidance": {
+    "en": "/audio/guidance-all-pension-guidance_en.mp3",
+    "kn": "/audio/guidance-all-pension-guidance_kn.mp3",
+    "hi": "/audio/guidance-all-pension-guidance_hi.mp3",
+    "ta": "/audio/guidance-all-pension-guidance_ta.mp3",
+    "te": "/audio/guidance-all-pension-guidance_te.mp3",
+    "ml": "/audio/guidance-all-pension-guidance_ml.mp3"
+  },
+  "guidance-all-ration-card": {
+    "en": "/audio/guidance-all-ration-card_en.mp3",
+    "kn": "/audio/guidance-all-ration-card_kn.mp3",
+    "hi": "/audio/guidance-all-ration-card_hi.mp3",
+    "te": "/audio/guidance-all-ration-card_te.mp3",
+    "ta": "/audio/guidance-all-ration-card_ta.mp3",
+    "ml": "/audio/guidance-all-ration-card_ml.mp3"
+  },
+  "guidance-all-ayushman-card": {
+    "en": "/audio/guidance-all-ayushman-card_en.mp3",
+    "kn": "/audio/guidance-all-ayushman-card_kn.mp3",
+    "te": "/audio/guidance-all-ayushman-card_te.mp3",
+    "hi": "/audio/guidance-all-ayushman-card_hi.mp3",
+    "ta": "/audio/guidance-all-ayushman-card_ta.mp3",
+    "ml": "/audio/guidance-all-ayushman-card_ml.mp3"
+  },
+  "guidance-all-pm-kisan": {
+    "en": "/audio/guidance-all-pm-kisan_en.mp3",
+    "kn": "/audio/guidance-all-pm-kisan_kn.mp3",
+    "hi": "/audio/guidance-all-pm-kisan_hi.mp3",
+    "te": "/audio/guidance-all-pm-kisan_te.mp3",
+    "ml": "/audio/guidance-all-pm-kisan_ml.mp3",
+    "ta": "/audio/guidance-all-pm-kisan_ta.mp3"
+  },
+  "plain-lang-prescribed-documents": {
+    "en": "/audio/plain-lang-prescribed-documents_en.mp3",
+    "kn": "/audio/plain-lang-prescribed-documents_kn.mp3",
+    "hi": "/audio/plain-lang-prescribed-documents_hi.mp3"
+  },
+  "plain-lang-statutory-affidavit": {
+    "en": "/audio/plain-lang-statutory-affidavit_en.mp3",
+    "kn": "/audio/plain-lang-statutory-affidavit_kn.mp3"
+  },
+  "plain-lang-gazetted-officer-attestation": {
+    "en": "/audio/plain-lang-gazetted-officer-attestation_en.mp3",
+    "kn": "/audio/plain-lang-gazetted-officer-attestation_kn.mp3"
+  },
+  "plain-lang-domicile-certificate": {
+    "en": "/audio/plain-lang-domicile-certificate_en.mp3",
+    "kn": "/audio/plain-lang-domicile-certificate_kn.mp3"
+  },
+  "plain-lang-direct-benefit-transfer": {
+    "en": "/audio/plain-lang-direct-benefit-transfer_en.mp3",
+    "kn": "/audio/plain-lang-direct-benefit-transfer_kn.mp3"
+  },
+  "plain-lang-self-attestation": {
+    "en": "/audio/plain-lang-self-attestation_en.mp3",
+    "kn": "/audio/plain-lang-self-attestation_kn.mp3"
+  },
+  "plain-lang-income-ceiling": {
+    "en": "/audio/plain-lang-income-ceiling_en.mp3",
+    "kn": "/audio/plain-lang-income-ceiling_kn.mp3",
+    "hi": "/audio/plain-lang-income-ceiling_hi.mp3"
+  },
+  "plain-lang-grievance-redressal": {
+    "en": "/audio/plain-lang-grievance-redressal_en.mp3",
+    "kn": "/audio/plain-lang-grievance-redressal_kn.mp3"
+  },
+  "plain-lang-biometric-authentication": {
+    "en": "/audio/plain-lang-biometric-authentication_en.mp3",
+    "kn": "/audio/plain-lang-biometric-authentication_kn.mp3"
+  },
+  "plain-lang-encumbrance-certificate": {
+    "en": "/audio/plain-lang-encumbrance-certificate_en.mp3"
+  }
+}

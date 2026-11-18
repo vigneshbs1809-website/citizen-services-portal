@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <rect width="48" height="48" rx="10" fill="#2457A6"/>
+  <!-- Government Pillar / Landmark Icon in White & Teal Accent -->
+  <path d="M8 40H40V37H8V40Z" fill="#FFFFFF"/>
+  <path d="M10 37H38V34H10V37Z" fill="#F0FAF9"/>
+  <path d="M12 34V20H15V34H12Z" fill="#FFFFFF"/>
+  <path d="M19 34V20H22V34H19Z" fill="#FFFFFF"/>
+  <path d="M26 34V20H29V34H26Z" fill="#FFFFFF"/>
+  <path d="M33 34V20H36V34H33Z" fill="#FFFFFF"/>
+  <path d="M9 20H39V17H9V20Z" fill="#F0FAF9"/>
+  <path d="M24 8L8 17H40L24 8Z" fill="#168C83"/>
+  <circle cx="24" cy="13.5" r="2" fill="#FFFFFF"/>
+</svg>

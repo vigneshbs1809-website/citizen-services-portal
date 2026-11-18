@@ -1,0 +1,241 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2457A6;
+  --color-primary-hover: #1D4788;
+  --color-primary-subtle: #EEF3FA;
+
+  --color-secondary: #168C83;
+  --color-secondary-hover: #12726B;
+  --color-secondary-subtle: #F0FAF9;
+
+  --color-surface-bg: #FFFFFF;
+  --color-section-bg: #F7F9FC;
+
+  --color-text-primary: #202938;
+  --color-text-secondary: #667085;
+
+  --color-border-color: #E5EAF0;
+  --color-border-hover: #D0D7E2;
+
+  --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-kannada: 'Noto Sans Kannada', system-ui, sans-serif;
+  --font-hindi: 'Noto Sans Devanagari', system-ui, sans-serif;
+  --font-telugu: 'Noto Sans Telugu', system-ui, sans-serif;
+  --font-tamil: 'Noto Sans Tamil', system-ui, sans-serif;
+  --font-malayalam: 'Noto Sans Malayalam', system-ui, sans-serif;
+}
+
+@layer base {
+  *, ::after, ::before {
+    box-sizing: border-box;
+    border-color: #E5EAF0;
+  }
+
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    font-family: var(--font-inter);
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #202938;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Responsive media defaults */
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* Universal interactive element transitions */
+  a, button, input, select, textarea {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  /* Skip to main content link for keyboard users */
+  .skip-link {
+    position: absolute;
+    top: -9999px;
+    left: 1rem;
+    background: #2457A6;
+    color: #FFFFFF;
+    padding: 0.75rem 1.25rem;
+    font-weight: 700;
+    z-index: 99999;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .skip-link:focus {
+    top: 1rem;
+    outline: 4px solid #168C83;
+    outline-offset: 2px;
+  }
+
+  /* Language-specific font overrides */
+  :lang(hi) {
+    font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
+  }
+
+  :lang(kn) {
+    font-family: 'Noto Sans Kannada', 'Inter', sans-serif;
+  }
+
+  :lang(te) {
+    font-family: 'Noto Sans Telugu', 'Inter', sans-serif;
+  }
+
+  :lang(ta) {
+    font-family: 'Noto Sans Tamil', 'Inter', sans-serif;
+  }
+
+  :lang(ml) {
+    font-family: 'Noto Sans Malayalam', 'Inter', sans-serif;
+  }
+
+  /* =========================================================================
+     1. TEXT SIZE SCALING (WCAG 2.2 AA SC 1.4.4 Resize Text)
+  ========================================================================== */
+  html.text-size-normal {
+    font-size: 16px;
+  }
+
+  html.text-size-large {
+    font-size: 18.5px;
+  }
+
+  html.text-size-xlarge {
+    font-size: 21px;
+  }
+
+  body.text-size-large {
+    font-size: 1.15rem;
+  }
+
+  body.text-size-xlarge {
+    font-size: 1.3rem;
+  }
+
+  /* =========================================================================
+     2. VISIBLE FOCUS INDICATORS (WCAG 2.2 AA SC 2.4.7 & SC 2.4.11 Focus Appearance)
+  ========================================================================== */
+  :focus-visible {
+    outline: 3px solid #2457A6 !important;
+    outline-offset: 2px !important;
+  }
+
+  body.enhanced-focus :focus-visible {
+    outline: 4px solid #168C83 !important;
+    outline-offset: 3px !important;
+    box-shadow: 0 0 0 6px rgba(22, 140, 131, 0.25) !important;
+  }
+
+  /* =========================================================================
+     3. HIGH CONTRAST THEME (WCAG 2.2 AAA Contrast >= 7:1)
+  ========================================================================== */
+  body.high-contrast {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+  }
+
+  body.high-contrast header,
+  body.high-contrast footer,
+  body.high-contrast main,
+  body.high-contrast section,
+  body.high-contrast div {
+    border-color: #FFF500 !important;
+  }
+
+  body.high-contrast .bg-white,
+  body.high-contrast .bg-\[\#F7F9FC\],
+  body.high-contrast .bg-\[\#F0FAF9\],
+  body.high-contrast .bg-\[\#EEF3FA\],
+  body.high-contrast .bg-\[\#F0F5FD\] {
+    background-color: #0F0F0F !important;
+    color: #FFFFFF !important;
+    border-color: #FFF500 !important;
+  }
+
+  body.high-contrast h1,
+  body.high-contrast h2,
+  body.high-contrast h3,
+  body.high-contrast h4,
+  body.high-contrast h5,
+  body.high-contrast h6,
+  body.high-contrast p,
+  body.high-contrast span,
+  body.high-contrast strong,
+  body.high-contrast label {
+    color: #FFFFFF !important;
+  }
+
+  body.high-contrast a,
+  body.high-contrast button {
+    text-decoration: underline !important;
+    text-decoration-thickness: 2px !important;
+  }
+
+  body.high-contrast button:hover,
+  body.high-contrast a:hover {
+    color: #FFF500 !important;
+  }
+
+  body.high-contrast input,
+  body.high-contrast select,
+  body.high-contrast textarea {
+    background-color: #000000 !important;
+    color: #FFF500 !important;
+    border: 2px solid #FFF500 !important;
+  }
+
+  body.high-contrast :focus-visible {
+    outline: 4px solid #FFF500 !important;
+    outline-offset: 4px !important;
+  }
+
+  /* =========================================================================
+     4. REDUCED MOTION (WCAG 2.2 AA SC 2.3.3 Animation from Interactions)
+  ========================================================================== */
+  body.reduced-motion *,
+  body.reduced-motion *::before,
+  body.reduced-motion *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* =========================================================================
+     5. READABLE FONTS & DYSLEXIA-FRIENDLY SPACING
+  ========================================================================== */
+  body.readable-font {
+    letter-spacing: 0.04em !important;
+    word-spacing: 0.08em !important;
+    line-height: 1.85 !important;
+  }
+
+  body.readable-font p,
+  body.readable-font span,
+  body.readable-font li,
+  body.readable-font a {
+    line-height: 1.9 !important;
+  }
+}

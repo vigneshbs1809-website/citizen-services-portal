@@ -1,0 +1,950 @@
+export const servicesData = [
+  {
+    id: 'income-certificate',
+    slug: 'income-certificate',
+    category: 'certificates',
+    title: 'Income Certificate',
+    shortDescription: 'Official government document certifying the annual family income required for scholarships, fee waivers, and welfare schemes.',
+    processingTime: '7 to 10 Working Days',
+    officialFee: '₹15 (Nominal Portal Fee)',
+    isPopular: true,
+    benefitAmount: 'Mandatory for fee waivers and state/central subsidies',
+    spokenSummary: 'The Income Certificate proves your family annual income. It is required for fee waivers, school admissions, and scholarships. The official fee is fifteen rupees. You need your salary slip or income self-declaration, ration card, and residence proof.',
+    multilingualKeywords: {
+      en: ['income certificate', 'income', 'salary slip', 'annual income', 'tahsildar', 'affidavit', 'certificate', 'family income', 'tehsil'],
+      kn: ['ಆದಾಯ ಪ್ರಮಾಣಪತ್ರ', 'ಆದಾಯ ಪ್ರಮಾಣ ಪತ್ರ', 'ಆದಾಯ', 'ವೇತನ ಪತ್ರ', 'ಪ್ರಮಾಣಪತ್ರ', 'ತಹಶೀಲ್ದಾರ್', 'ಆದಾಯ ಪ್ರಮಾಣ', 'ಆದಾಯ ಸರ್ಟಿಫಿಕೇಟ್'],
+      hi: ['आय प्रमाण पत्र', 'आय प्रमाणपत्र', 'आय', 'वेतन पर्ची', 'प्रमाण पत्र', 'तहसीलदार', 'सर्टिफिकेट', 'वार्षिक आय', 'आय प्रमाण'],
+      te: ['ఆదాయ ధృవీకరణ పత్రం', 'ఆదాయ ధ్రువీకరణ పత్రం', 'ఆదాయం', 'జీతం స్లిప్', 'సర్టిఫికేట్', 'తహశీల్దార్', 'ఆదాయ సర్టిఫికెట్'],
+      ta: ['வருமானச் சான்றிதழ்', 'வருமான சான்றிதழ்', 'வருமானம்', 'சம்பள ரசீது', 'சான்றிதழ்', 'வட்டாட்சியர்', 'வருமான ஆதாரம்'],
+      ml: ['വരുമാന സർട്ടിഫിക്കറ്റ്', 'വരുമാനം', 'ശമ്പള സർട്ടിഫിക്കറ്റ്', 'സർട്ടിഫിക്കറ്റ്', 'തഹസിൽദാർ', 'വരുമാന തെളിവ്']
+    },
+    eligibilityCriteria: {
+      targetGroup: 'Any permanent resident citizen or family head',
+      incomeLimit: 'No upper ceiling for applying; used to certify any bracket',
+      residenceRequirement: 'Permanent resident of the state/district for at least 1 year',
+      questions: [
+        {
+          id: 'residence',
+          question: 'Are you a permanent resident of this district or state?',
+          explanation: 'Requires a standard local address proof such as electricity bill or voter card.',
+          required: true
+        },
+        {
+          id: 'income_records',
+          question: 'Do you have salary slips, farm earnings proof, or an income self-declaration affidavit?',
+          explanation: 'Informal workers can submit a simple self-declaration notarized affidavit.',
+          required: true
+        },
+        {
+          id: 'aadhaar_linked',
+          question: 'Do you have an active Aadhaar card with updated mobile number?',
+          explanation: 'Used for e-KYC and digital certificate authentication.',
+          required: true
+        }
+      ]
+    },
+    requiredDocuments: [
+      'Salary Slip, Employer Letter, or Income Self-Declaration Affidavit',
+      'Ration Card copy or Family Registry document',
+      'Aadhaar Card of the family head',
+      'Recent passport-size photograph'
+    ],
+    documentDetails: [
+      {
+        id: 'doc-inc-salary',
+        name: 'Salary Slip or Income Affidavit',
+        explanation: 'Proves your household annual earnings so the government can verify eligibility for fee waivers, scholarships, and welfare benefits.',
+        example: 'Recent pay slip with employer stamp, or a ₹20 stamp paper affidavit signed by a notary declaring your family’s monthly earnings.',
+        photocopiesNeeded: 1,
+        source: 'Employer for formal workers, or local notary for informal workers (₹20 stamp paper)',
+        isMandatory: true
+      },
+      {
+        id: 'doc-inc-ration',
+        name: 'Ration Card or Family Registry',
+        explanation: 'Lists all family members living together under one household to compute the total family income accurately.',
+        example: 'State Food & Civil Supplies ration card (BPL/AAY/APL) showing names of all registered family dependents.',
+        photocopiesNeeded: 1,
+        source: 'Panchayat office or Food and Civil Supplies portal',
+        isMandatory: true
+      },
+      {
+        id: 'doc-inc-aadhaar',
+        name: 'Aadhaar Card of Family Head',
+        explanation: 'Confirms the official identity, father/spouse name, and residential jurisdiction of the applicant.',
+        example: 'Physical Aadhaar card, printed letter, or masked e-Aadhaar downloaded from UIDAI.',
+        photocopiesNeeded: 1,
+        source: 'UIDAI Aadhaar Seva Kendra or post office',
+        isMandatory: true
+      },
+      {
+        id: 'doc-inc-photo',
+        name: 'Passport-Size Photograph',
+        explanation: 'Affixed onto the official revenue office verification record and printed onto the digitally signed certificate.',
+        example: 'Two recent color photographs (3.5 cm x 4.5 cm) with front-facing pose and light background.',
+        photocopiesNeeded: 2,
+        source: 'Any local photo studio or CSC camera',
+        isMandatory: true
+      }
+    ],
+    simpleSteps: [
+      {
+        stepNumber: 1,
+        title: 'Gather Income Proof',
+        instruction: 'Collect salary slips, village pradhan income letter, or bank statements showing earnings.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Submit Application Form',
+        instruction: 'Apply online through your state e-District portal or visit your nearest Common Service Center (CSC).'
+      },
+      {
+        stepNumber: 3,
+        title: 'Revenue Inspector Verification',
+        instruction: 'The local revenue accountant (Lekhpal / Talathi) verifies family income status.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Download Digitally Signed Certificate',
+        instruction: 'An SMS link is sent to your phone. Download or collect your digitally signed government certificate.'
+      }
+    ]
+  },
+  {
+    id: 'caste-certificate',
+    slug: 'caste-certificate',
+    category: 'certificates',
+    title: 'Caste Certificate',
+    shortDescription: 'Document affirming citizen category (SC, ST, OBC, EWS) to avail constitutional reservations, subsidies, and educational benefits.',
+    processingTime: '10 to 14 Working Days',
+    officialFee: '₹15 (Official Fixed Fee)',
+    isPopular: true,
+    benefitAmount: 'Unlocks category reservation quotas and educational benefits',
+    spokenSummary: 'The Caste Certificate verifies your caste category for school admissions, competitive exams, and government job quotas. The fee is fifteen rupees. You need your father or paternal relative caste certificate, school leaving certificate, and Aadhaar card.',
+    multilingualKeywords: {
+      en: ['caste certificate', 'community certificate', 'sc', 'st', 'obc', 'ews', 'reservation', 'tahsildar', 'caste proof'],
+      kn: ['ಜಾತಿ ಪ್ರಮಾಣಪತ್ರ', 'ಜಾತಿ ಪ್ರಮಾಣ ಪತ್ರ', 'ಜಾತಿ', 'ಮೀಸಲಾತಿ', 'ಒಬಿಸಿ', 'ಎಸ್ಸಿ', 'ಎಸ್ಟಿ', 'ತಹಶೀಲ್ದಾರ್', 'ಜಾತಿ ಸರ್ಟಿಫಿಕೇಟ್'],
+      hi: ['जाति प्रमाण पत्र', 'जाति प्रमाणपत्र', 'जाति', 'आरक्षण', 'एससी', 'एसटी', 'ओबीसी', 'ईडब्ल्यूएस', 'तहसीलदार', 'कास्ट सर्टिफिकेट'],
+      te: ['కుల ధృవీకరణ పత్రం', 'కుల ధ్రువీకరణ పత్రం', 'కులం', 'రిజర్వేషన్', 'ఎస్సీ', 'ఎస్టీ', 'బీసీ', 'ఈడబ్ల్యూఎస్', 'కుల సర్టిఫికెట్'],
+      ta: ['சாதிச் சான்றிதழ்', 'சாதி சான்றிதழ்', 'சாதி', 'இடஒதுக்கீடு', 'எஸ்சி', 'எஸ்டி', 'ஓபிசி', 'வட்டாட்சியர்', 'சமூக சான்றிதழ்'],
+      ml: ['ജാതി സർട്ടിഫിക്കറ്റ്', 'ജാതി', 'സംവരണം', 'എസ് സി', 'എസ് ടി', 'ഒബിസി', 'സർട്ടിഫിക്കറ്റ്', 'തഹസിൽദാർ', 'കമ്മ്യൂണിറ്റി സർട്ടിഫിക്കറ്റ്']
+    },
+    eligibilityCriteria: {
+      targetGroup: 'Citizens belonging to notified SC, ST, OBC, or EWS categories',
+      incomeLimit: 'OBC non-creamy layer ceiling: ₹8 Lakhs / EWS: ₹8 Lakhs',
+      residenceRequirement: 'Permanent resident with ancestral linkage in the state',
+      questions: [
+        {
+          id: 'category',
+          question: 'Do you belong to an officially notified community (SC, ST, OBC, or EWS)?',
+          explanation: 'Official lists maintained by state and central welfare departments.',
+          required: true
+        },
+        {
+          id: 'paternal_record',
+          question: 'Do you have previous caste proof from your father, grandfather, or paternal uncle?',
+          explanation: 'Paternal lineage document is the primary evidentiary foundation.',
+          required: true
+        },
+        {
+          id: 'school_tc',
+          question: 'Do you possess a School Leaving Certificate or Birth Certificate with community mentioned?',
+          explanation: 'Confirms personal identity alongside ancestral proof.',
+          required: true
+        }
+      ]
+    },
+    requiredDocuments: [
+      'Paternal family caste certificate (Father, Grandfather, or Uncle)',
+      'School Leaving Certificate or Birth Certificate showing caste record',
+      'Aadhaar Card of applicant and parent',
+      'Affidavit of community lineage'
+    ],
+    documentDetails: [
+      {
+        id: 'doc-cst-paternal',
+        name: 'Paternal Caste Certificate or Lineage Proof',
+        explanation: 'Verifies hereditary community membership through paternal lineage under state caste validity statutes.',
+        example: 'Father’s or grandfather’s official caste certificate, school record with caste entry, or historic revenue settlement record.',
+        photocopiesNeeded: 1,
+        source: 'Previous issued certificate of father or grandfather from Tehsildar',
+        isMandatory: true
+      },
+      {
+        id: 'doc-cst-school',
+        name: 'School Leaving Certificate / Birth Certificate',
+        explanation: 'Establishes verified date of birth and the community recorded at initial school admission.',
+        example: 'School Transfer Certificate (TC) from recognized institution, or Municipal Birth Certificate.',
+        photocopiesNeeded: 1,
+        source: 'Headmaster of primary/secondary school attended',
+        isMandatory: true
+      },
+      {
+        id: 'doc-cst-aadhaar',
+        name: 'Aadhaar Card (Applicant & Parent)',
+        explanation: 'Legally validates demographic details and father-child or mother-child familial relationship.',
+        example: 'Clear photocopies of the applicant’s Aadhaar card and the father’s Aadhaar card.',
+        photocopiesNeeded: 1,
+        source: 'UIDAI',
+        isMandatory: true
+      },
+      {
+        id: 'doc-cst-affidavit',
+        name: 'Notarized Lineage Affidavit',
+        explanation: 'A formal sworn declaration affirming the family pedigree tree and undertaking legal responsibility for truthfulness.',
+        example: 'Genealogy family tree affidavit drafted on ₹20/₹50 stamp paper attested by an Executive Magistrate or Notary.',
+        photocopiesNeeded: 1,
+        source: 'Local Tehsildar court notary',
+        isMandatory: true
+      }
+    ],
+    simpleSteps: [
+      {
+        stepNumber: 1,
+        title: 'Locate Family Caste Evidence',
+        instruction: 'Keep any previous caste document from your father or grandfather ready as primary evidence.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Submit Online or at Tehsil Office',
+        instruction: 'Submit the standardized one-page form at your sub-divisional magistrate (SDM) or e-Seva center.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Field Inquiry Verification',
+        instruction: 'Revenue authorities conduct local lineage verification.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Certificate Issuance',
+        instruction: 'Obtain the barcoded, digitally verifiable Caste Certificate with lifetime or standard validity.'
+      }
+    ]
+  },
+  {
+    id: 'residence-certificate',
+    slug: 'residence-certificate',
+    category: 'certificates',
+    title: 'Residence Certificate (Domicile)',
+    shortDescription: 'Proof of permanent residence in a state or union territory, essential for state recruitment, quota admissions, and government housing.',
+    processingTime: '7 to 10 Working Days',
+    officialFee: '₹15 (Official Fixed Fee)',
+    isPopular: true,
+    benefitAmount: 'Confirms state domicile for local job reservations and admissions',
+    spokenSummary: 'The Residence Certificate proves how long you have lived in your state. It is needed for state college admissions and local recruitment. You need electricity bills, voter identity card, school certificate, and continuous residence proof for the past three years.',
+    multilingualKeywords: {
+      en: ['residence certificate', 'domicile certificate', 'nativity certificate', 'domicile', 'permanent resident', 'address proof', 'local resident'],
+      kn: ['ವಾಸಸ್ಥಳ ಪ್ರಮಾಣಪತ್ರ', 'ನಿವಾಸ ಪ್ರಮಾಣಪತ್ರ', 'ವಾಸಸ್ಥಳ', 'ನಿವಾಸಿ', 'ಸ್ಥಳೀಯ ಪ್ರಮಾಣಪತ್ರ', 'ಡೊಮಿಸೈಲ್', 'ವಾಸ ಪ್ರಮಾಣ ಪತ್ರ'],
+      hi: ['निवास प्रमाण पत्र', 'मूल निवास प्रमाण पत्र', 'निवास', 'अधिवास', 'डोमिसाइल', 'आवासीय प्रमाण', 'मूल निवास'],
+      te: ['నివాస ధృవీకరణ పత్రం', 'నివాస ధ్రువీకరణ', 'నివాసం', 'స్థానికత', 'డొమిసైల్', 'స్థానిక సర్టిఫికేట్', 'నేటివిటీ'],
+      ta: ['இருப்பிடச் சான்றிதழ்', 'இருப்பிட சான்றிதழ்', 'நேட்டிவிட்டி சான்றிதழ்', 'வசிப்பிடம்', 'இருப்பிடம்', 'நேட்டிவிட்டி'],
+      ml: ['വാസസ്ഥല സർട്ടിഫിക്കറ്റ്', 'നേറ്റിവിറ്റി സർട്ടിഫിക്കറ്റ്', 'സ്ഥിരതാമസം', 'റെസിഡൻസ് സർട്ടിഫിക്കറ്റ്', 'വാസസ്ഥലം']
+    },
+    eligibilityCriteria: {
+      targetGroup: 'Residents who have stayed in the state continuously for 3+ years',
+      incomeLimit: 'No income restriction',
+      residenceRequirement: 'Minimum 3 to 10 years continuous domicile depending on state rules',
+      questions: [
+        {
+          id: 'tenure',
+          question: 'Have you lived in this state continuously for at least 3 years?',
+          explanation: 'Demonstrated through continuous utility bills or schooling.',
+          required: true
+        },
+        {
+          id: 'local_id',
+          question: 'Do you hold a local Voter ID, Aadhaar, or state ration card with current address?',
+          explanation: 'Serves as primary address verification.',
+          required: true
+        },
+        {
+          id: 'declaration',
+          question: 'Can you provide a self-declaration confirming you do not hold domicile in another state?',
+          explanation: 'Citizens are legally entitled to single state domicile at a time.',
+          required: true
+        }
+      ]
+    },
+    requiredDocuments: [
+      'Continuous residence proof for 3+ years (Electricity bill, water bill, or house tax receipt)',
+      'Voter Identity Card or Aadhaar Card',
+      'Educational certificate from state-recognized school',
+      'Self-declaration of domicile'
+    ],
+    documentDetails: [
+      {
+        id: 'doc-res-utility',
+        name: '3-Year Utility / Tax Proof',
+        explanation: 'Proves uninterrupted domicile within the state boundaries for the minimum statutory period (usually 3 to 7 years).',
+        example: 'Consecutive annual electricity bills, municipal property tax receipts, or registered rent agreement with landlord verification.',
+        photocopiesNeeded: 1,
+        source: 'Electricity board, municipal corporation, or village panchayat',
+        isMandatory: true
+      },
+      {
+        id: 'doc-res-voter',
+        name: 'Voter ID or Aadhaar Card',
+        explanation: 'Official government photo identification establishing residence within the local electoral ward or constituency.',
+        example: 'Election Commission Voter ID card (EPIC) or updated Aadhaar card with local address.',
+        photocopiesNeeded: 1,
+        source: 'Election Commission of India / UIDAI',
+        isMandatory: true
+      },
+      {
+        id: 'doc-res-school',
+        name: 'School / College Transfer Certificate',
+        explanation: 'Corroborates formative schooling and continuous educational presence inside the home state.',
+        example: 'School Leaving Certificate or Class 10 marksheet indicating state school location.',
+        photocopiesNeeded: 1,
+        source: 'Educational institution where studied in the state',
+        isMandatory: false
+      },
+      {
+        id: 'doc-res-declaration',
+        name: 'Self-Declaration Form',
+        explanation: 'A formal legal statement confirming continuous residence and absence of dual domicile status in another state.',
+        example: 'Standard e-District Domicile Undertaking form filled and signed by the applicant.',
+        photocopiesNeeded: 1,
+        source: 'Downloaded from portal or obtained at CSC counter',
+        isMandatory: true
+      }
+    ],
+    simpleSteps: [
+      {
+        stepNumber: 1,
+        title: 'Collect Address Proofs',
+        instruction: 'Assemble 3 years of residential utility bills or voter identity records.'
+      },
+      {
+        stepNumber: 2,
+        title: 'File Domicile Application',
+        instruction: 'Submit electronically or physically at your local Tehsildar office.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Police or Local Verification',
+        instruction: 'Local administrative inspection confirms uninterrupted residential tenure.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Receive Domicile Document',
+        instruction: 'Collect the official permanent residence certificate with government QR verification.'
+      }
+    ]
+  },
+  {
+    id: 'scholarship-guidance',
+    slug: 'scholarship-guidance',
+    category: 'education',
+    title: 'Scholarship Guidance (Pre & Post-Matric)',
+    shortDescription: 'Comprehensive financial support and full tuition fee reimbursement for school, college, and university students from modest backgrounds.',
+    processingTime: 'Annual Portal Window (Aug – Nov)',
+    officialFee: 'Free of Cost (₹0)',
+    isPopular: true,
+    benefitAmount: '100% Tuition Fee Reimbursement + Annual Maintenance Stipend',
+    spokenSummary: 'Scholarship Guidance helps students get tuition fees and monthly allowances for school and college. Applying is completely free. You need your current year college bonafide certificate, previous year marksheets, income certificate below two lakh rupees, and your own Aadhaar linked bank passbook.',
+    multilingualKeywords: {
+      en: ['scholarship guidance', 'scholarship', 'fee waiver', 'tuition fee reimbursement', 'student allowance', 'pre matric', 'post matric', 'nsp', 'education grant'],
+      kn: ['ವಿದ್ಯಾರ್ಥಿವೇತನ', 'ಸ್ಕಾಲರ್‌ಶಿಪ್', 'ವಿದ್ಯಾರ್ಥಿ ವೇತನ', 'ಶುಲ್ಕ ಮನ್ನಾ', 'ಶಿಕ್ಷಣ ಸಹಾಯಧನ', 'ವಿದ್ಯಾರ್ಥಿ', 'ಕಾಲೇಜು ಸ್ಕಾಲರ್‌ಶಿಪ್'],
+      hi: ['छात्रवृत्ति', 'स्कॉलरशिप', 'फीस माफी', 'वजीफा', 'प्री मैट्रिक', 'पोस्ट मैट्रिक', 'छात्र कल्याण', 'कॉलेज फीस'],
+      te: ['స్కాలర్‌షిప్', 'విద్యార్థి వేతనం', 'విద్యా దీవెన', 'ఫీజు రీయింబర్స్‌మెంట్', 'విద్యార్థి సహాయం', 'కాలేజ్ స్కాలర్‌షిప్'],
+      ta: ['கல்வி உதவித்தொகை', 'ஸ்காலர்ஷிப்', 'கல்விக் கட்டணச் சலுகை', 'மாணவர் உதவித்தொகை', 'கல்வி நிதி', 'கல்லூரி கட்டணம்'],
+      ml: ['സ്കോളർഷിപ്പ്', 'വിദ്യാഭ്യാസ സഹായം', 'ഫീസ് ഇളവ്', 'വിദ്യാർത്ഥി വേതനം', 'സ്കോളർഷിപ്പ് പദ്ധതി', 'പഠന സഹായം']
+    },
+    eligibilityCriteria: {
+      targetGroup: 'Regular students enrolled in recognized school, college, or polytechnic',
+      incomeLimit: 'Family annual income under ₹2,50,000 (relaxed for specific categories)',
+      residenceRequirement: 'Citizen resident of India studying in affiliated institution',
+      questions: [
+        {
+          id: 'enrolled',
+          question: 'Are you enrolled as a regular student in a government or recognized private institution?',
+          explanation: 'Distance/correspondence courses have separate scholarship quotas.',
+          required: true
+        },
+        {
+          id: 'family_income',
+          question: 'Is your total family annual income less than ₹2.5 Lakhs?',
+          explanation: 'Supported by a valid tehsildar income certificate.',
+          required: true
+        },
+        {
+          id: 'bank_account',
+          question: 'Do you have your own personal bank account linked to your Aadhaar card (DBT enabled)?',
+          explanation: 'Scholarship amounts cannot be credited to parents accounts.',
+          required: true
+        }
+      ]
+    },
+    requiredDocuments: [
+      'College / School Bonafide Certificate & Fee Receipt',
+      'Previous academic year marksheets (minimum passing grade)',
+      'Valid family Income Certificate (family income under ₹2.5 Lakhs)',
+      'Aadhaar-linked Bank Passbook (Student own account, not parents)'
+    ],
+    documentDetails: [
+      {
+        id: 'doc-sch-bonafide',
+        name: 'Bonafide Certificate & Fee Receipt',
+        explanation: 'Certifies full-time enrollment in the current academic year and the exact tuition fees paid for reimbursement.',
+        example: 'Institution letterhead bonafide signed by the Principal/Registrar with seal, plus official college fee challan.',
+        photocopiesNeeded: 1,
+        source: 'College or school administrative office',
+        isMandatory: true
+      },
+      {
+        id: 'doc-sch-marksheet',
+        name: 'Previous Year Marksheet',
+        explanation: 'Demonstrates academic continuity and satisfaction of minimum percentage criteria required under scholarship rules.',
+        example: 'Official marks card of Class 10/12 or previous semester exam issued by the Board/University.',
+        photocopiesNeeded: 1,
+        source: 'School board or university examination cell',
+        isMandatory: true
+      },
+      {
+        id: 'doc-sch-income',
+        name: 'Income Certificate (< ₹2.5 Lakhs)',
+        explanation: 'Validates that household earnings are within eligible low-income thresholds for tuition waiver.',
+        example: 'Valid Revenue Department Income Certificate with barcode or digital signature (issued within 1–3 years).',
+        photocopiesNeeded: 1,
+        source: 'Revenue department / Tehsildar',
+        isMandatory: true
+      },
+      {
+        id: 'doc-sch-bank',
+        name: 'Aadhaar-Linked Bank Passbook',
+        explanation: 'Enables Direct Benefit Transfer (DBT) directly into the student’s bank account via NPCI payment bridge.',
+        example: 'Front page of nationalized bank passbook showing Account Number, IFSC code, and branch seal.',
+        photocopiesNeeded: 1,
+        source: 'Bank branch (DBT / NPCI seeded)',
+        isMandatory: true
+      }
+    ],
+    simpleSteps: [
+      {
+        stepNumber: 1,
+        title: 'Register on National Scholarship Portal (NSP)',
+        instruction: 'Create your unique One-Time Registration (OTR) using student Aadhaar number.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Fill Academic & Scheme Details',
+        instruction: 'Enter your course, roll number, and upload verified bonafide certificate from college.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Institutional Verification',
+        instruction: 'Your school or college nodal officer verifies your enrollment on the government portal.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Direct Benefit Transfer (DBT)',
+        instruction: 'Scholarship allowance is credited directly into the student bank account via PFMS.'
+      }
+    ]
+  },
+  {
+    id: 'pension-guidance',
+    slug: 'pension-guidance',
+    category: 'pension',
+    title: 'Pension Guidance (Senior Citizens, Widows & Disability)',
+    shortDescription: 'Direct monthly financial dignity allowance credited into the bank accounts of senior citizens, surviving spouses, and differently-abled individuals.',
+    processingTime: '21 to 30 Working Days',
+    officialFee: 'Free of Cost (₹0)',
+    isPopular: true,
+    benefitAmount: '₹1,000 to ₹1,500 monthly recurring direct bank transfer',
+    spokenSummary: 'Pension guidance helps elders above sixty years, widows, and persons with disabilities get monthly pension support directly into their bank account. It is totally free of cost. You need an age certificate, income proof, and bank passbook with Aadhaar link.',
+    multilingualKeywords: {
+      en: ['pension guidance', 'old age pension', 'widow pension', 'disability pension', 'senior citizen pension', 'elderline', 'monthly pension', 'handicap pension'],
+      kn: ['ಪಿಂಚಣಿ', 'ವೃದ್ಧಾಪ್ಯ ವೇತನ', 'ಸಂಧ್ಯಾ ಸುರಕ್ಷಾ', 'ವಿಧವಾ ವೇತನ', 'ವಿಕಲಚೇತನರ ಪಿಂಚಣಿ', 'ಹಿರಿಯ ನಾಗರಿಕರು', 'ಅಂಗವಿಕಲ ಪಿಂಚಣಿ'],
+      hi: ['पेंशन योजना', 'वृद्धावस्था पेंशन', 'विधवा पेंशन', 'दिव्यांग पेंशन', 'बुजुर्ग पेंशन', 'मासिक पेंशन', 'विकलांग पेंशन'],
+      te: ['పెన్షన్', 'వృద్ధాప్య పింఛను', 'వైఎస్సార్ పెన్షన్', 'వితంతు పింఛను', 'దివ్యాంగుల పెన్షన్', 'ఆసరా పెన్షన్', 'వృద్ధుల పెన్షన్'],
+      ta: ['ஓய்வூதியம்', 'முதியோர் ஓய்வூதியம்', 'விதவை ஓய்வூதியம்', 'மாற்றுத்திறனாளி ஓய்வூதியம்', 'மாத உதவித்தொகை', 'முதியோர் உதவித்தொகை'],
+      ml: ['പെൻഷൻ', 'വാർദ്ധക്യ പെൻഷൻ', 'വിധവാ പെൻഷൻ', 'ഭിന്നശേഷി പെൻഷൻ', 'മാസാന്ത പെൻഷൻ', 'ക്ഷേമ പെൻഷൻ', 'വൃദ്ധ പെൻഷൻ']
+    },
+    eligibilityCriteria: {
+      targetGroup: 'Senior citizens aged 60+, destitute widows, or individuals with 40%+ disability',
+      incomeLimit: 'Rural family income < ₹46,080 / Urban family income < ₹56,460 per annum (BPL limit)',
+      residenceRequirement: 'Permanent resident of the state for minimum 10 years',
+      questions: [
+        {
+          id: 'eligibility_group',
+          question: 'Are you 60+ years old, a widowed spouse, or an individual with 40%+ certified disability?',
+          explanation: 'Proof of age or civil surgeon disability certificate required.',
+          required: true
+        },
+        {
+          id: 'bpl_status',
+          question: 'Does your family belong to Below Poverty Line (BPL) or marginal income threshold?',
+          explanation: 'BPL card or Tehsildar income certificate establishes destitution criteria.',
+          required: true
+        },
+        {
+          id: 'no_govt_pension',
+          question: 'Are you free from any other government or armed forces retirement pension?',
+          explanation: 'Scheme is strictly reserved for unorganized sector citizens without pensions.',
+          required: true
+        }
+      ]
+    },
+    requiredDocuments: [
+      'Age Proof (Aadhaar Card, Voter ID, or Medical Age Certificate for age 60+)',
+      'Bank Account Passbook photocopy with clear IFSC & Account Number',
+      'Income Certificate (Rural family income below ₹46,000 / Urban below ₹56,000)',
+      'Death certificate of spouse (for widow pension) or Disability Certificate (40%+)'
+    ],
+    documentDetails: [
+      {
+        id: 'doc-pen-age',
+        name: 'Age Proof (Aadhaar / Voter ID)',
+        explanation: 'Confirms applicant has reached the statutory retirement/pension age threshold (60+ years for Old Age Pension).',
+        example: 'Aadhaar card with full date of birth, Voter ID (EPIC), or District Hospital civil surgeon assessment certificate.',
+        photocopiesNeeded: 1,
+        source: 'UIDAI or Election Commission',
+        isMandatory: true
+      },
+      {
+        id: 'doc-pen-bank',
+        name: 'Bank Passbook with Aadhaar Link',
+        explanation: 'Account where monthly financial allowance is disbursed automatically via Public Financial Management System (PFMS).',
+        example: 'Passbook of nationalized bank, regional rural bank, or India Post Payments Bank with active IFSC.',
+        photocopiesNeeded: 1,
+        source: 'Any nationalized, rural, or postal bank',
+        isMandatory: true
+      },
+      {
+        id: 'doc-pen-bpl',
+        name: 'BPL Card or Income Certificate',
+        explanation: 'Verifies economic destitution / poverty criteria stipulated under the National Social Assistance Programme (NSAP).',
+        example: 'Ration card with BPL / Antyodaya status, or Tehsildar-issued low-income certificate.',
+        photocopiesNeeded: 1,
+        source: 'Block Development Officer (BDO) or Tehsildar',
+        isMandatory: true
+      },
+      {
+        id: 'doc-pen-med',
+        name: 'Medical / Death Certificate (if applicable)',
+        explanation: 'Required exclusively for special categories: 40%+ disability certificate for disability pension, or spouse death certificate for widow pension.',
+        example: 'Unique Disability ID (UDID) card / CMO Medical Board certificate, or Municipal Death Certificate of husband.',
+        photocopiesNeeded: 1,
+        source: 'Chief Medical Officer (CMO) for disability / Registrar for death cert',
+        isMandatory: false
+      }
+    ],
+    simpleSteps: [
+      {
+        stepNumber: 1,
+        title: 'Confirm Scheme Category',
+        instruction: 'Select Old Age Pension (60+ yrs), Widow Pension, or Divyangjan Disability Pension.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Link Aadhaar with Bank Account',
+        instruction: 'Ensure NPCI Aadhaar seeding is active at your bank branch so pension transfers arrive reliably.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Submit Application at Block or CSC',
+        instruction: 'Hand in your one-page form at the Block Development Officer (BDO) or Seva Kendra.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Monthly Direct Benefit Transfer',
+        instruction: 'Once approved, monthly pension is credited automatically in the first week of every month.'
+      }
+    ]
+  },
+  {
+    id: 'ration-card',
+    slug: 'ration-card-food-security',
+    category: 'identity',
+    title: 'Ration Card (Food Security Card)',
+    shortDescription: 'Get subsidized monthly grains (wheat, rice, pulses) for your family at your nearest government fair price shop.',
+    processingTime: '15 to 21 Working Days',
+    officialFee: 'Free of Cost (₹0)',
+    isPopular: false,
+    benefitAmount: 'Subsidized Food Grains Every Month (5kg per person or 35kg per Antyodaya family)',
+    spokenSummary: 'This service is for making a new ration card. With this card, your family gets food grains from the local ration shop. It is completely free. You need your family Aadhaar cards and residence proof.',
+    multilingualKeywords: {
+      en: ['ration card', 'food security card', 'subsidized grains', 'rice', 'wheat', 'bpl card', 'antyodaya', 'fair price shop', 'ration'],
+      kn: ['ಪಡಿತರ ಚೀಟಿ', 'ರೇಷನ್ ಕಾರ್ಡ್', 'ಆಹಾರ ಭದ್ರತಾ ಕಾರ್ಡ್', 'ಬಿಪಿಎಲ್ ಕಾರ್ಡ್', 'ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿ', 'ಅಕ್ಕಿ ಬೇಳೆ', 'ರೇಷನ್'],
+      hi: ['राशन कार्ड', 'खाद्य सुरक्षा कार्ड', 'बीपीएल राशन कार्ड', 'अंत्योदय', 'सरकारी राशन दुकान', 'राशन', 'अनाज'],
+      te: ['రేషన్ కార్డు', 'ఆహార భద్రత కార్డు', 'బియ్యం కార్డు', 'బిపిఎల్ కార్డు', 'రేషన్ సరుకులు', 'చౌకధరల దుకాణం', 'రేషన్'],
+      ta: ['ரேஷன் அட்டை', 'ஸ்மார்ட் கார்டு', 'குடும்ப அட்டை', 'உணவுப் பொருள் அட்டை', 'நியாயவிலைக் கடை', 'ரேஷன்', 'ரேசன்'],
+      ml: ['റേഷൻ കാർഡ്', 'ഭക്ഷ്യഭദ്രതാ കാർഡ്', 'ബിപിഎൽ കാർഡ്', 'റേഷൻ കട', 'സബ്‌സിഡി റേഷൻ സാധനങ്ങൾ', 'റേഷൻ']
+    },
+    eligibilityCriteria: {
+      targetGroup: 'Eligible household families (Antyodaya AAY or Priority Household PHH)',
+      incomeLimit: 'Annual income ceiling varies by state (typically under ₹1.5 Lakhs)',
+      residenceRequirement: 'Permanent resident with valid family domicile in the jurisdiction',
+      questions: [
+        {
+          id: 'head_female',
+          question: 'Do you have details of the eldest adult woman to nominate as head of household?',
+          explanation: 'National Food Security Act (NFSA) mandates the woman as head of ration card.',
+          required: true
+        },
+        {
+          id: 'all_aadhaar',
+          question: 'Do all family members to be included have individual Aadhaar numbers?',
+          explanation: 'Mandatory for biometric ration distribution at fair price shops.',
+          required: true
+        },
+        {
+          id: 'no_duplicate',
+          question: 'Confirm that no member listed is currently active on another state ration card.',
+          explanation: 'National portal conducts automated deduplication checks.',
+          required: true
+        }
+      ]
+    },
+    requiredDocuments: [
+      'Aadhaar Card copies of all family members',
+      'Proof of residence (Electricity bill or voter slip)',
+      'Passport size photograph of the female head of family',
+      'Active mobile number linked to bank account'
+    ],
+    documentDetails: [
+      {
+        id: 'doc-rat-aadhaar',
+        name: 'Aadhaar Cards of All Family Members',
+        explanation: 'Mandatory under the National Food Security Act to link every household member to prevent duplicate or ghost ration cards.',
+        example: 'Photocopies of Aadhaar cards of the head of family, spouse, children, and residing elderly parents.',
+        photocopiesNeeded: 1,
+        source: 'UIDAI',
+        isMandatory: true
+      },
+      {
+        id: 'doc-rat-address',
+        name: 'Address Proof (Electricity / LPG connection)',
+        explanation: 'Allocates your household to the appropriate designated Fair Price Shop (ration shop) in your ward or village.',
+        example: 'Recent domestic electricity bill, LPG domestic cylinder passbook, or registered house tax assessment.',
+        photocopiesNeeded: 1,
+        source: 'Utility provider / Gas agency',
+        isMandatory: true
+      },
+      {
+        id: 'doc-rat-photo',
+        name: 'Photo of Female Head of Family',
+        explanation: 'Under Section 12 of the NFSA, the eldest woman aged 18+ is legally recognized as the head of the household on the card.',
+        example: 'Two recent color passport-size photographs of the female head of the family.',
+        photocopiesNeeded: 2,
+        source: 'Local photo studio or CSC camera',
+        isMandatory: true
+      },
+      {
+        id: 'doc-rat-bank',
+        name: 'Bank Passbook of Female Head',
+        explanation: 'Used for direct food subsidy cash transfers (DBT) and state welfare grain compensation payouts.',
+        example: 'First page of bank passbook in the name of the female head showing Account Number and IFSC.',
+        photocopiesNeeded: 1,
+        source: 'Bank branch',
+        isMandatory: true
+      }
+    ],
+    simpleSteps: [
+      {
+        stepNumber: 1,
+        title: 'Gather Your Papers',
+        instruction: 'Collect Aadhaar cards of everyone in your home and one utility bill or village letter.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Submit at Seva Kendra or Online',
+        instruction: 'Visit your nearest Gram Panchayat or apply online through food supply portal.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Receive Acknowledgement Slip',
+        instruction: 'Keep the 12-digit application tracking number.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Collect Card',
+        instruction: 'Collect your printed ration card from the local fair price shop.'
+      }
+    ]
+  },
+  {
+    id: 'ayushman-card',
+    slug: 'ayushman-card-health-cover',
+    category: 'identity',
+    title: 'Ayushman Card (PM-JAY Health Cover)',
+    shortDescription: 'Free cashless hospitalization and healthcare cover up to ₹5,00,000 per family per year across empaneled public and private hospitals.',
+    processingTime: 'Instant or 2 to 3 Working Days',
+    officialFee: 'Free of Cost (₹0)',
+    isPopular: true,
+    benefitAmount: '₹5,00,000 Cashless Health Treatment Per Family Every Year',
+    spokenSummary: 'Ayushman card gives five lakh rupees free medical treatment in major hospitals every year for your entire family. The card is completely free. You only need your Aadhaar card and ration card to generate it instantly.',
+    multilingualKeywords: {
+      en: ['ayushman card', 'pm-jay', 'pmjay', 'health card', 'free hospital treatment', 'medical insurance', 'golden card', '5 lakh health', 'hospital card'],
+      kn: ['ಆಯುಷ್ಮಾನ್ ಕಾರ್ಡ್', 'ಆರೋಗ್ಯ ಕಾರ್ಡ್', 'ಆಯುಷ್ಮಾನ್ ಭಾರತ್', 'ಉಚಿತ ಆಸ್ಪತ್ರೆ ಚಿಕಿತ್ಸೆ', 'ಗೋಲ್ಡನ್ ಕಾರ್ಡ್', 'ಆರೋಗ್ಯ ವಿಮೆ', 'ಆಸ್ಪತ್ರೆ ಕಾರ್ಡ್'],
+      hi: ['आयुष्मान कार्ड', 'आयुष्मान भारत', 'स्वास्थ्य कार्ड', 'गोल्डन कार्ड', 'मुफ्त अस्पताल इलाज', 'पीएमजेएवाई', 'दवा कार्ड', 'अस्पताल कार्ड'],
+      te: ['ఆయుష్మాన్ కార్డు', 'ఆరోగ్యశ్రీ కార్డు', 'హెల్త్ కార్డు', 'ఉచిత ఆసుపత్రి వైద్యం', 'గోల్డెన్ కార్డు', 'ఆరోగ్య బీమా', 'ఆసుపత్రి కార్డు'],
+      ta: ['ஆயுஷ்மான் அட்டை', 'மருத்துவ அட்டை', 'முதலமைச்சர் மருத்துவ காப்பீடு', 'கோல்டன் கார்டு', 'இலவச சிகிச்சை', 'மருத்துவமனை அட்டை'],
+      ml: ['ആയുഷ്മാൻ കാർഡ്', 'ആരോഗ്യ കാർഡ്', 'കാരുണ്യ ആരോഗ്യ സുരക്ഷാ പദ്ധതി', 'ഗോൾഡൻ കാർഡ്', 'സൗജന്യ ചികിത്സ', 'ആശുപത്രി കാർഡ്']
+    },
+    eligibilityCriteria: {
+      targetGroup: 'Families identified in SECC 2011 deprivation criteria or eligible ration card holders',
+      incomeLimit: 'Vulnerable and low-income occupational households',
+      residenceRequirement: 'Citizen of India',
+      questions: [
+        {
+          id: 'secc_or_ration',
+          question: 'Does your family hold a Priority Household (PHH) or Antyodaya ration card?',
+          explanation: 'Eligible ration card holders are automatically mapped to PM-JAY.',
+          required: true
+        },
+        {
+          id: 'aadhaar_biometric',
+          question: 'Can you provide Aadhaar fingerprint or face authentication at any hospital kiosk?',
+          explanation: 'Instant e-KYC verifies your card creation on the spot.',
+          required: true
+        }
+      ]
+    },
+    requiredDocuments: [
+      'Aadhaar Card of each beneficiary',
+      'Ration Card / PM-JAY Family ID letter',
+      'Active mobile number for OTP'
+    ],
+    documentDetails: [
+      {
+        id: 'doc-ayu-aadhaar',
+        name: 'Aadhaar Card',
+        explanation: 'Used for real-time biometric or OTP e-KYC authentication on the National Health Authority (NHA) server.',
+        example: 'Original Aadhaar card or e-Aadhaar printout with linked mobile number for instant verification.',
+        photocopiesNeeded: 1,
+        source: 'UIDAI',
+        isMandatory: true
+      },
+      {
+        id: 'doc-ayu-ration',
+        name: 'Ration Card or HH ID',
+        explanation: 'Verifies matching entitlement against the Socio-Economic Caste Census (SECC) database for cashless ₹5 Lakh health cover.',
+        example: 'State Food Department ration card (NFSA/BPL) or official PM-JAY entitlement letter containing family barcode.',
+        photocopiesNeeded: 1,
+        source: 'Food Department',
+        isMandatory: true
+      }
+    ],
+    simpleSteps: [
+      {
+        stepNumber: 1,
+        title: 'Check Name on Beneficiary List',
+        instruction: 'Search your family name on beneficiary.nha.gov.in or ask at the hospital Ayushman Mitra desk.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Biometric e-KYC Verification',
+        instruction: 'Give your fingerprint or Aadhaar OTP to verify your identity at the kiosk.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Instant Card Download',
+        instruction: 'Your PVC Ayushman Card or digital PDF is generated immediately with zero charge.'
+      }
+    ]
+  },
+  {
+    id: 'pm-kisan',
+    slug: 'pm-kisan-samman-nidhi',
+    category: 'pension',
+    title: 'PM-Kisan Samman Nidhi',
+    shortDescription: 'Direct income support of ₹6,000 per year paid in three equal installments of ₹2,000 to small and marginal farmer families.',
+    processingTime: 'Next Quarterly Installment Cycle',
+    officialFee: 'Free of Cost (₹0)',
+    isPopular: true,
+    benefitAmount: '₹6,000 per year (3 Installments of ₹2,000 each in Bank Account)',
+    spokenSummary: 'PM-Kisan gives six thousand rupees every year directly to small farmers in three installments of two thousand rupees. Registration is completely free. You need your land ownership records, Aadhaar, and bank passbook.',
+    multilingualKeywords: {
+      en: ['pm kisan', 'pm-kisan', 'samman nidhi', 'farmer financial support', '6000 rupees installment', 'agriculture assistance', 'kisan samman', 'farmer grant'],
+      kn: ['ಪಿಎಂ ಕಿಸಾನ್', 'ಕಿಸಾನ್ ಸಮ್ಮಾನ್ ನಿಧಿ', 'ರೈತರ ಯೋಜನೆ', 'ರೈತರಿಗೆ ಆರ್ಥಿಕ ನೆರವು', 'ಕೃಷಿ ಸಹಾಯಧನ', 'ಕಿಸಾನ್', 'ರೈತರ ಹಣ'],
+      hi: ['पीएम किसान', 'किसान सम्मान निधि', 'किसान योजना', '6000 रुपये सहायता', 'कृषि सहायता', 'खेती पैसा', 'किसान किस्त'],
+      te: ['పీఎం కిసాన్', 'రైతు భరోసా', 'కిసాన్ సమ్మాన్ నిధి', 'వ్యవసాయ సహాయం', 'రైతు పథకం', 'కిసాన్', 'రైతు డబ్బులు'],
+      ta: ['பிஎம் கிசான்', 'உழவர் உதவித்தொகை', 'கிசான் திட்டம்', 'விவசாய நிதி உதவி', 'உழவர் கௌரவ நிதி', 'விவசாயி பணம்'],
+      ml: ['പിഎം കിസാൻ', 'കർഷക സമ്മാൻ നിധി', 'കാർഷിക സഹായം', 'കർഷക പെൻഷൻ', 'ആറായിരം രൂപ പദ്ധതി', 'കർഷക പണം']
+    },
+    eligibilityCriteria: {
+      targetGroup: 'Small and marginal landholding farmer families with cultivable land',
+      incomeLimit: 'Institutional landholders and income-tax payers are excluded',
+      residenceRequirement: 'Resident farmer with land registered in state revenue records',
+      questions: [
+        {
+          id: 'land_records',
+          question: 'Do you hold cultivable agricultural land registered in your own name (Khasra/Khatauni)?',
+          explanation: 'Land records must be seeded with revenue authorities.',
+          required: true
+        },
+        {
+          id: 'no_tax_filer',
+          question: 'Confirm that no member of your immediate family files income tax or holds high public office.',
+          explanation: 'Scheme is targeted at marginal agricultural households.',
+          required: true
+        },
+        {
+          id: 'aadhaar_dbt',
+          question: 'Is your bank account linked to your Aadhaar card for Direct Benefit Transfer?',
+          explanation: 'Installments are released strictly through PFMS Aadhaar payment bridge.',
+          required: true
+        }
+      ]
+    },
+    requiredDocuments: [
+      'Agricultural Land Records (Khatoni / RoR copy showing name)',
+      'Aadhaar Card of the farmer',
+      'Bank Account Passbook with IFSC and NPCI seeding',
+      'Active mobile number'
+    ],
+    documentDetails: [
+      {
+        id: 'doc-pmk-land',
+        name: 'Land Record (Khatauni / RoR)',
+        explanation: 'Proves cultivable agricultural land is legally registered in the farmer’s own name in official state revenue records.',
+        example: 'Certified computerized Khatauni / Record of Rights (RoR) verified by the village revenue patwari or downloaded from State Bhulekh portal.',
+        photocopiesNeeded: 1,
+        source: 'Revenue Patwari / Village Lekhpal or State Bhulekh portal',
+        isMandatory: true
+      },
+      {
+        id: 'doc-pmk-aadhaar',
+        name: 'Aadhaar Card',
+        explanation: 'Mandatory under PM-Kisan guidelines for bi-annual Aadhaar OTP e-KYC authentication on the national portal.',
+        example: 'Original Aadhaar card with current mobile number linked for receiving the verification OTP.',
+        photocopiesNeeded: 1,
+        source: 'UIDAI',
+        isMandatory: true
+      },
+      {
+        id: 'doc-pmk-bank',
+        name: 'Bank Passbook (NPCI Seeded)',
+        explanation: 'Account where ₹2,000 quarterly installments are deposited directly through the Aadhaar Payment Bridge System (APBS).',
+        example: 'Bank passbook copy with bank official stamp confirming active NPCI Aadhaar seeding for DBT payments.',
+        photocopiesNeeded: 1,
+        source: 'Bank branch',
+        isMandatory: true
+      }
+    ],
+    simpleSteps: [
+      {
+        stepNumber: 1,
+        title: 'Check Land Record Verification',
+        instruction: 'Ensure your land survey number is verified on your state land registry.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Farmer Self-Registration',
+        instruction: 'Register online at pmkisan.gov.in or through your Village Level Entrepreneur (CSC).'
+      },
+      {
+        stepNumber: 3,
+        title: 'Aadhaar e-KYC',
+        instruction: 'Complete OTP or biometric e-KYC to keep installments active.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Installment Credit',
+        instruction: 'Receive ₹2,000 every 4 months directly into your verified bank account.'
+      }
+    ]
+  },
+  {
+    id: 'sample-solar-subsidy',
+    slug: 'sample-solar-subsidy',
+    category: 'education',
+    title: 'Solar Panel Subsidy (Demonstration Sample)',
+    shortDescription: 'Illustrative demonstration scheme showing how new upcoming green energy subsidies are structured on this portal.',
+    processingTime: '14 Working Days (Demo)',
+    officialFee: 'Free of Cost (₹0 Demo)',
+    isPopular: false,
+    isDemonstration: true,
+    benefitAmount: 'Up to ₹30,000 subsidy (Illustrative Sample Only)',
+    spokenSummary: 'This is an illustrative demonstration scheme explaining how government rooftop solar panel subsidies are processed.',
+    multilingualKeywords: {
+      en: ['solar', 'demo', 'subsidy', 'sample', 'solar panel', 'rooftop solar', 'green energy'],
+      kn: ['ಸೌರ', 'ಡೆಮೊ', 'ಸಬ್ಸಿಡಿ', 'ಮಾದರಿ', 'ಸೌರ ಫಲಕ'],
+      hi: ['सोलर', 'डेमो', 'सब्सिडी', 'नमूना', 'सोलर पैनल'],
+      te: ['సోలార్', 'డెమో', 'సబ్సిడీ', 'నమూనా', 'సోలార్ ప్యానెల్'],
+      ta: ['சூரிய', 'டெமோ', 'மானிய', 'மாதிரி', 'சூரிய சக்தி'],
+      ml: ['സോളാർ', 'ഡെമോ', 'സബ്സിഡി', 'മാതൃക']
+    },
+    eligibilityCriteria: {
+      targetGroup: 'Residential homeowners with suitable unshaded rooftop space',
+      incomeLimit: 'Open to all income brackets with domestic electricity connection',
+      residenceRequirement: 'Permanent resident homeowner in India',
+      questions: [
+        {
+          id: 'rooftop_space',
+          question: 'Do you own a residential building with available unshaded roof space?',
+          explanation: 'Requires minimum 100 sq ft shadow-free rooftop area per kW capacity.',
+          required: true
+        },
+        {
+          id: 'electricity_bill',
+          question: 'Do you hold an active domestic electricity connection in your name?',
+          explanation: 'Used by the electricity distribution company (DISCOM) for net metering.',
+          required: true
+        }
+      ]
+    },
+    requiredDocuments: [
+      'Electricity Bill of the premises',
+      'Property Ownership Document or House Tax Receipt',
+      'Aadhaar Card of the Property Owner',
+      'Bank Passbook Copy for Subsidy Transfer'
+    ],
+    documentDetails: [
+      {
+        id: 'doc-solar-bill',
+        name: 'Recent Electricity Bill',
+        explanation: 'Confirms active domestic consumer connection and sanctioned load with the local DISCOM.',
+        example: 'Latest monthly electricity bill showing consumer CA number and tariff category.',
+        photocopiesNeeded: 1,
+        source: 'Electricity Distribution Company (DISCOM)',
+        isMandatory: true
+      },
+      {
+        id: 'doc-solar-ownership',
+        name: 'Property Ownership Proof',
+        explanation: 'Verifies the applicant is the legal owner of the rooftop where panels are installed.',
+        example: 'Registered sale deed, property tax receipt, or possession certificate.',
+        photocopiesNeeded: 1,
+        source: 'Municipal Corporation or Revenue Department',
+        isMandatory: true
+      },
+      {
+        id: 'doc-solar-aadhaar',
+        name: 'Aadhaar Card of Owner',
+        explanation: 'Mandatory identity verification for Direct Benefit Transfer (DBT) subsidy linkage.',
+        example: 'UIDAI Aadhaar Card matching electricity bill name.',
+        photocopiesNeeded: 1,
+        source: 'UIDAI',
+        isMandatory: true
+      }
+    ],
+    simpleSteps: [
+      {
+        stepNumber: 1,
+        title: 'Submit Feasibility Application',
+        instruction: 'Register online at National Portal for Rooftop Solar and receive technical feasibility approval.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Vendor Installation',
+        instruction: 'Install certified ALMM solar modules through an empaneled DISCOM vendor.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Net Metering & Inspection',
+        instruction: 'DISCOM officials inspect installation and install the bi-directional net meter.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Subsidy Credit via DBT',
+        instruction: 'Central financial assistance is deposited directly into your bank account within 30 days.'
+      }
+    ]
+  }
+];
+
+export default servicesData;
